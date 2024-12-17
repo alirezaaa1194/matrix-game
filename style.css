@@ -1,0 +1,79 @@
+@font-face {
+  font-family: Dana;
+  src: url("./fonts/DanaFaNum-Regular.woff2");
+}
+* {
+  font-family: Dana;
+  transition: 0.2s;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: #3b1e54;
+}
+.container {
+  min-width: 300px;
+  display: grid;
+  gap: 10px;
+}
+
+span {
+  aspect-ratio: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+  background-color: #9b7ebd;
+  /* background-color: #D4BEE4; */
+  box-shadow: 0px 0px 5px #9b7ebd;
+  border-radius: 7px;
+  cursor: pointer;
+  color: #3b1e54;
+  font-size: 1.4rem;
+}
+
+span.off {
+  filter: brightness(50%);
+}
+
+span.submit {
+  filter: brightness(75%);
+}
+
+button {
+  margin-top: 1rem;
+  cursor: pointer;
+}
+
+sup {
+  color: red;
+}
+
+h2 {
+  text-align: center;
+  color: white;
+}
+
+.section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1rem;
+  gap: 1rem;
+}
+.level-label-box {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+.time-label.hint {
+  color: red;
+}
+
+p {
+  position: absolute;
+  right: 1rem;
+  bottom: 1rem;
+  color: white;
+}
